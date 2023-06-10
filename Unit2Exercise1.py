@@ -15,8 +15,7 @@ print("Please think of a number between 0 and 100!")
 while high > low:
     ans = (high + low) // 2
     print("Is your secret number " + str(ans) + "?")
-    userInput = input("Enter 'l' if it is too low, 'h' if the guess is too high, or 'c' if it is correct. ")
-    print(userInput)
+    userInput = input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly. ")
     if userInput == "l":
         low = ans
     elif userInput == "h":
